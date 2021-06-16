@@ -1,0 +1,38 @@
+/*
+Ler uma matriz 3x3 e mostrar a diagonal principal
+
+M = | 7 8 9 |
+    | 6 7 8 |
+    | 5 6 7 |
+
+M = | 00 01 02 |
+    | 10 11 12 |
+    | 20 21 22 |
+
+Para i <-- 0 até 2 Faça
+    Para j <-- 0 até 2 Faça
+        Leia(M[i][j])
+    Fim Para
+Fim Para
+
+Para i <-- 0 até 2 Faça
+    Para j <-- 0 até 2 Faça
+        Se i = j Faça
+           Escreva(M[i][j])
+        Fim Se
+    Fim Para
+Fim Para
+
+*/
+#include <iostream>
+using namespace std;
+int main(void)
+{
+    int i = 10;
+    while (i < 1000)
+    {
+        i = i + 10;
+    }
+    cout << i << endl;
+    return 0;
+}

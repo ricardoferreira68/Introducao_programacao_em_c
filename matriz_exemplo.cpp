@@ -4,6 +4,7 @@ int main(void)
 {
     int i, j, aluno;
     float NOTAS[5][3];
+    cout << "Controle do Professor " <<endl<<endl;
     for (i=0;i<5;i++)
     { 
         for(j=0;j<3;j++)
@@ -12,11 +13,18 @@ int main(void)
             cin >> NOTAS[i][j];
         }
     }
-    cout <<  "Consultar aluno: ";
+
+    cout <<  "Consultar aluno (1000 p/ encerrar'): ";
     cin >> aluno;
-    cout << "Aluno "<< aluno << ". Notas: ";
-    cout << "AV1: "<< NOTAS[aluno][0] << ". ";
-    cout << "AV2: "<< NOTAS[aluno][1] << ". ";
-    cout << "AV3: "<< NOTAS[aluno][2] << ". ";
+    while(aluno != 1000)
+    { 
+        cout << "Aluno "<< aluno << ": ";
+        cout << "AV1("<< NOTAS[aluno][0] << ") ";
+        cout << "AV2( "<< NOTAS[aluno][1] << ") ";
+        cout << "AV3( "<< NOTAS[aluno][2] << ") ";
+        cout << endl << endl;
+        cout <<  "Consultar aluno (1000 p/ encerrar'): ";
+        cin >> aluno;
+    }
     return 0; 
 }
